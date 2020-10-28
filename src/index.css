@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Ubuntu:wght@400;500;700&display=swap");
+/**
+    font-family: 'Roboto', sans-serif;
+
+    
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Segoe UI";
+}
+
+:root {
+  --ubuntu-orange: #dd4814;
+  --ubuntu-purple: #77216f;
+  --ubuntu-dark-purple: #2c001e;
+  --ubuntu-opac-purple: #5e2750;
+  --ubuntu-gray: #333333;
+  --white: #ffffff;
+  --black: #000000;
+}

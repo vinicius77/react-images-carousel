@@ -1,0 +1,37 @@
+.navbar {
+  position: fixed;
+  width: 100%;
+  padding: 15px 0;
+  background: var(--ubuntu-gray);
+  font-family: "Ubuntu", sans-serif;
+}
+
+.max-width {
+  max-width: 1300px;
+  padding: 0 80px;
+  margin: auto;
+}
+
+.navbar .max-width {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .logo a {
+  color: var(--white);
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.navbar .menu li {
+  list-style: none;
+  display: inline-block;
+}
+
+.navbar .menu li a {
+  color: var(--white);
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 25px;
+}
