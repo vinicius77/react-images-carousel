@@ -55,22 +55,36 @@
 
 /** Toogle Menu styling */
 .menu-button {
-  color: var(--white);
+  color: var(--ubuntu-orange);
   font-size: 27px;
   cursor: pointer;
   display: none;
 }
 
-@media (max-width: 990px) {
+@media (max-width: 949px) {
+  .menu-button {
+    display: block;
+    z-index: 50;
+  }
+
+  .menu-button i.active::before {
+    content: "\f00d";
+  }
+
   .navbar .menu {
     position: fixed;
     top: 0;
-    left: 0;
+    left: -100%;
     height: 100vh;
     width: 100%;
     text-align: center;
     padding-top: 90px;
     background: var(--ubuntu-gray);
+    transition: all 0.5s ease;
+  }
+
+  .navbar .menu.active {
+    left: 0;
   }
 
   .navbar .menu li {
@@ -87,7 +101,7 @@
   .navbar .menu li a::after {
     content: attr(data-after);
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
     font-size: 10rem;

@@ -3,6 +3,12 @@ import "./Navbar.css";
 
 const Navbar = () => {
   const [navClassName, setClassName] = useState("navbar");
+  const [isToggle, setIsToggle] = useState(true);
+
+  /** Toggles the hamburger menu along with the ternary operation condition */
+  const onToggleHandler = () => {
+    setIsToggle(!isToggle);
+  };
 
   /** Sets the navbar className according with the value of Y scroll position */
   const onScrollHandler = () => {
@@ -26,7 +32,7 @@ const Navbar = () => {
             Vinifo<span>lio</span>
           </a>
         </div>
-        <ul className="menu">
+        <ul className={isToggle ? "menu" : "menu active"}>
           <li>
             <a href="/" data-after="Home">
               Home
@@ -58,8 +64,8 @@ const Navbar = () => {
             </a>
           </li>
         </ul>
-        <div className="menu-button">
-          <i className="fas fa-bars"></i>
+        <div className="menu-button" onClick={() => onToggleHandler()}>
+          <i className={isToggle ? "fas fa-bars" : "fas fa-bars active"}></i>
         </div>
       </div>
     </nav>

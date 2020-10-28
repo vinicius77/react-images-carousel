@@ -30,7 +30,7 @@
 }
 
 /** Responsive Media Queries */
-@media (max-width: 990px) {
+@media (max-width: 949px) {
   .max-width {
     padding: 0 50px;
   }
