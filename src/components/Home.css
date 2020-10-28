@@ -5,6 +5,20 @@
   color: var(--white);
   min-height: 500px;
   font-family: "Ubuntu", sans-serif;
+  position: relative;
+  z-index: -1;
+}
+
+/** Applies the dark background effect*/
+.home::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -2;
 }
 
 .home .max-width {
