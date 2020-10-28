@@ -10,7 +10,7 @@ const Navbar = () => {
             Vinifo<span>lio</span>
           </a>
         </div>
-        <ul class="menu">
+        <ul className="menu">
           <li>
             <a href="/">Home</a>
           </li>

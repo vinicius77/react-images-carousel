@@ -1,15 +1,14 @@
 .navbar {
   position: fixed;
   width: 100%;
-  padding: 15px 0;
-  background: var(--ubuntu-gray);
+  padding: 30px 0;
   font-family: "Ubuntu", sans-serif;
+  transition: all 0.3s ease;
 }
 
-.max-width {
-  max-width: 1300px;
-  padding: 0 80px;
-  margin: auto;
+.navbar.sticky {
+  padding: 15px;
+  background: var(--ubuntu-orange);
 }
 
 .navbar .max-width {
@@ -24,6 +23,19 @@
   font-weight: 600;
 }
 
+.navbar .logo a span {
+  color: var(--ubuntu-orange);
+  transition: all 0.3s ease;
+}
+
+.navbar.sticky .logo a span {
+  color: var(--ubuntu-gray);
+}
+
+.navbar.navbar.sticky .menu li a:hover {
+  color: var(--ubuntu-gray);
+}
+
 .navbar .menu li {
   list-style: none;
   display: inline-block;
@@ -34,4 +46,9 @@
   font-size: 18px;
   font-weight: 500;
   margin-left: 25px;
+  transition: color 0.3s ease;
+}
+
+.navbar .menu li a:hover {
+  color: var(--ubuntu-orange);
 }
