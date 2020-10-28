@@ -1,9 +1,24 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Navbar.css";
 
 const Navbar = () => {
+  const [navClassName, setClassName] = useState("navbar");
+
+  const onScrollHandler = () => {
+    let scrolled = document.scrollingElement.scrollTop;
+    if (scrolled >= 20) {
+      setClassName("sticky");
+    } else {
+      setClassName("navbar");
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("scroll", onScrollHandler);
+  }, []);
+
   return (
-    <nav className="navbar">
+    <nav className={navClassName === "navbar" ? navClassName : "navbar sticky"}>
       <div className="max-width">
         <div className="logo">
           <a href="/">
