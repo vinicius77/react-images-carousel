@@ -6,9 +6,9 @@ const Footer = () => {
     <footer>
       Reinvigorated by{" "}
       <span>
-        <a href="/">The Primeape Coder</a>
-      </span>{" "}
-      | <i className="fas fa-copyright"></i> 2020 - All rights reserved.
+        <a href="/">The Primeape Coder </a>
+      </span>
+      <i className="fas fa-copyright"></i> | 2020 - All rights reserved.
     </footer>
   );
 };
