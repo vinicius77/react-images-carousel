@@ -3,12 +3,14 @@
   width: 100%;
   padding: 30px 0;
   font-family: "Ubuntu", sans-serif;
-  transition: all 0.5s ease;
+  transition: all 0.9s ease;
+  z-index: 10;
 }
 
 .navbar.sticky {
   padding: 15px;
   background: var(--ubuntu-orange);
+  opacity: 0.9;
 }
 
 .navbar .max-width {
@@ -61,16 +63,26 @@
   display: none;
 }
 
+/** Media Queries related to the Navbar section */
+@media (max-width: 990px) {
+  .max-width {
+    padding: 0 50px;
+  }
+}
+
 @media (max-width: 949px) {
   .menu-button {
     display: block;
     z-index: 50;
   }
 
+  /** After setting the menu to active, replaces the hamburger menu icon
+  for a "X" (close menu button) */
   .menu-button i.active::before {
     content: "\f00d";
   }
 
+  /** Two classes resposible to toggle the menu*/
   .navbar .menu {
     position: fixed;
     top: 0;
@@ -86,6 +98,8 @@
   .navbar .menu.active {
     left: 0;
   }
+
+  /** Ends Toggle*/
 
   .navbar .menu li {
     display: block;
@@ -116,4 +130,10 @@
     letter-spacing: initial;
   }
   /** Ends Effect */
+}
+
+@media (max-width: 690px) {
+  .max-width {
+    padding: 0 23px;
+  }
 }

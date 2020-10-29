@@ -11,6 +11,7 @@ const Home = () => {
           <div className="text-3">
             The <span>Fullstack</span> Engineer
           </div>
+          <a href="/">Hire Me</a>
         </div>
       </div>
     </section>
