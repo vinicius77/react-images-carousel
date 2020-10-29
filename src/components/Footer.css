@@ -1,0 +1,18 @@
+footer {
+  background: var(--ubuntu-gray);
+  padding: 20px 23px;
+  color: var(--white);
+
+  opacity: 0.9;
+}
+
+footer span a,
+footer i {
+  color: var(--ubuntu-orange);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer span a:hover {
+  text-decoration: underline;
+}

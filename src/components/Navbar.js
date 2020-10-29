@@ -34,7 +34,7 @@ const Navbar = () => {
         </div>
         <ul className={isToggle ? "menu" : "menu active"}>
           <li>
-            <a href="/" data-after="Home">
+            <a href="#home" data-after="Home">
               Home
             </a>
           </li>

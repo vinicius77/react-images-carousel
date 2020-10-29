@@ -12,6 +12,10 @@
   text-decoration: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --ubuntu-orange: #dd4814;
   --ubuntu-purple: #77216f;

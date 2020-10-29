@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -18,6 +19,8 @@ function App() {
           corporis minus recusandae! Quam odio quas nihil quidem? Iste ea
           accusamus, numquam necessitatibus magni quas.
         </p>
+
+        <Footer />
       </div>
     </React.Fragment>
   );
