@@ -13,6 +13,10 @@
   font-family: "Ubuntu", sans-serif;
 }
 
+.about .title span {
+  color: var(--ubuntu-orange);
+}
+
 .about .title::before {
   content: "";
   position: absolute;
@@ -45,13 +49,13 @@
   height: 400px;
   width: 400px;
   object-fit: cover;
-  border-radius: 6px;
+  border-radius: 20px;
 }
 
 .about .about-content .right .text {
-  font-size: 23px;
+  font-size: 27px;
   font-weight: 700;
-  margin-bottom: 10px;
+  margin-bottom: 21px;
   color: var(--ubuntu-gray);
 }
 
@@ -80,4 +84,29 @@
 .about .about-content .right a:hover {
   background: transparent;
   color: var(--ubuntu-purple);
+}
+
+/** Media Queries related to the About section */
+
+@media (max-width: 1100px) {
+  .about .about-content .left img {
+    height: 350px;
+    width: 350px;
+  }
+}
+
+@media (max-width: 949px) {
+  .about .about-content .column {
+    width: 100%;
+  }
+
+  .about .about-content .left {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 60px;
+  }
+
+  .about .about-content .right {
+    flex: 100%;
+  }
 }

@@ -64,13 +64,16 @@
 }
 
 /** Media Queries related to the Navbar section */
-@media (max-width: 990px) {
+/* @media (max-width: 990px) {
   .max-width {
     padding: 0 50px;
   }
-}
+} */
 
 @media (max-width: 949px) {
+  .max-width {
+    padding: 0 50px;
+  }
   .menu-button {
     display: block;
     z-index: 50;
@@ -82,7 +85,7 @@
     content: "\f00d";
   }
 
-  /** Two classes resposible to toggle the menu*/
+  /** Two classes responsible to toggle the menu*/
   .navbar .menu {
     position: fixed;
     top: 0;

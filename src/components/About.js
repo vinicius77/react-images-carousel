@@ -5,7 +5,9 @@ const About = () => {
   return (
     <section className="about" id="about">
       <div className="max-width">
-        <h2 className="title">About Me</h2>
+        <h2 className="title">
+          About <span>Me</span>
+        </h2>
         <div className="about-content">
           <div className="column left">
             <img src="/images/crayon-bw.png" alt="Profile Pic" />
