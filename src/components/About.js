@@ -17,11 +17,12 @@ const About = () => {
               My name is Vinicius and I'm a <span>Fullstack Developer</span>
             </div>
             <p>
-              A passionate developer who when isn't glued to Ubunta's screen
-              (his laptop), spends time playing football, drawing, learning
-              Finnish and trying to be always updated with the most recent
-              technologies. Currently resides in Helsinki with his wife Hanna
-              and fulfill her life with tons of geek stuff and stickers.
+              A top bloke dude that when isn't glued to his laptop screen,
+              spends time outside playing football and working out, drawing,
+              playing and listening to music, learning random stuff,
+              skateboarding, watching repeated episodes of Two and a Half Men
+              and Naruto Shippuden, reading and travelling. Also loves surfing
+              but here in Finland it is such a hard task to accomplish.
             </p>
             <a href="/">Download my CV</a>
           </div>

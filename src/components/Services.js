@@ -4,10 +4,10 @@ import "./Services.css";
 const Services = () => {
   return (
     <section className="services" id="services">
-      <h2 className="title">
-        My <span>Speciality</span>
-      </h2>
       <div className="max-width">
+        <h2 className="title">
+          My <span>Speciality</span>
+        </h2>
         <div className="services-content">
           {/** Card 1  */}
           <div className="card">

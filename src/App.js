@@ -5,6 +5,7 @@ import Home from "./components/Home";
 import Footer from "./components/Footer";
 import About from "./components/About";
 import Services from "./components/Services";
+import Skills from "./components/Skills";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Home />
         <About />
         <Services />
+        <Skills />
 
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
