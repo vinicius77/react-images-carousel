@@ -17,7 +17,7 @@ html {
   --ubuntu-dark-purple: #2c001e;
   --ubuntu-opac-purple: #5e2750;
   --ubuntu-gray: #333333;
-  --light-gray: rgba(240, 248, 255, 0.123);
+  --ubuntu-light-gray: rgba(240, 248, 255, 0.123);
   --white: #ffffff;
   --black: #000000;
 }
@@ -29,7 +29,7 @@ html {
 }
 
 section {
-  padding: 80px 0;
+  padding: 60px 0 20px 0;
 }
 
 /** Responsive Media Queries */

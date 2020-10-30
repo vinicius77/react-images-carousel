@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Footer from "./components/Footer";
 import About from "./components/About";
+import Services from "./components/Services";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Navbar />
         <Home />
         <About />
+        <Services />
 
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus

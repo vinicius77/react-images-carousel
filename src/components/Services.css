@@ -1,0 +1,88 @@
+.services {
+  font-family: "Roboto", sans-serif;
+  color: var(--white);
+  background: var(--ubuntu-gray);
+}
+
+.services .title {
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.services .title span {
+  color: var(--ubuntu-orange);
+}
+
+.services .title::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 245px;
+  height: 5px;
+  background: var(--ubuntu-orange);
+  transform: translateX(-50%);
+}
+.services .services-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.services .services-content .card {
+  width: calc(33% - 20px);
+  text-align: center;
+  background: var(--ubuntu-light-gray);
+  border-radius: 6px;
+  padding: 20px 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.services .services-content .card:hover {
+  background: var(--ubuntu-dark-purple);
+}
+
+.services .services-content .card .box {
+  transition: all 0.3s ease;
+}
+
+.services .services-content .card:hover .box {
+  transform: scale(1.05);
+}
+
+.services .services-content .card i {
+  font-size: 50px;
+  color: var(--ubuntu-dark-purple);
+  transition: all 0.3s color;
+}
+
+.services .services-content .card:hover i {
+  color: var(--white);
+}
+
+.services .services-content .card .text {
+  font-size: 22px;
+  font-weight: 500;
+  margin: 10px 0 7px 0;
+}
+
+/** Responsive Media Queries for Services section */
+@media (max-width: 949px) {
+  .services .services-content .card {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 690px) {
+  .services .services-content .card {
+    width: 100%;
+  }
+}
