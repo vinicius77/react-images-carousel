@@ -41,6 +41,7 @@
   background: var(--ubuntu-light-gray);
   border-radius: 6px;
   padding: 20px 25px;
+  margin: 5px 0;
   cursor: pointer;
   transition: all 0.3s ease;
 }

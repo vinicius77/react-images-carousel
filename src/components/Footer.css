@@ -3,6 +3,7 @@ footer {
   padding: 20px 23px;
   color: var(--white);
   opacity: 0.9;
+  text-align: center;
 }
 
 footer span a,

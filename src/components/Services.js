@@ -25,13 +25,13 @@ const Services = () => {
           {/** Card 2  */}
           <div className="card">
             <div className="box">
-              <i className="fas fa-server"></i>
+              <i class="fas fa-atom"></i>
+
               <div className="text">Libraries and Frameworks</div>
               <p>
-                React library for simplifying the user interface and speed-up
-                the way HTML, CSS and JavaScript work together creating
-                responsive and mobile-friendly apps that display flawlessly on
-                any device
+                React for simplifying the user interface and speed-up the way
+                HTML, CSS and JS work together creating responsive and
+                mobile-friendly apps that display flawlessly on any device.
               </p>
             </div>
           </div>
@@ -39,12 +39,11 @@ const Services = () => {
           <div className="card">
             <div className="box">
               <i className="fas fa-code"></i>
-              <div className="text">Version Control System</div>
+              <div className="text">Version Control</div>
               <p>
-                Git for keeping track of all changes made to the source code
-                enabling smooth workflow management in large and collaborative
-                projects, allowing the software to be reinstated to previous
-                version that was free of issues.
+                Git for keeping track of changes made to the code, enabling
+                workflow management in large and collaborative projects where
+                the app can be reinstated to previous versions free of issues.
               </p>
             </div>
           </div>
@@ -55,9 +54,9 @@ const Services = () => {
               <div className="text">Fullstack</div>
               <p>
                 MERNG stack entirely using JS and JSON, for implementing the
-                traditional 4-tier architectural pattern: frontend React.js,
-                application Express.js and Node.js, database MongoDB and query
-                GraphQL tiers.
+                traditional 4-tier architectural pattern: frontend React,
+                application Express and Node, database MongoDB and query GraphQL
+                tiers.
               </p>
             </div>
           </div>
@@ -72,6 +71,20 @@ const Services = () => {
                 analyzing large datasets, finding hidden patterns, unseen
                 trends, discovering correlations and deriving valuable insights
                 to make business predictions.
+              </p>
+            </div>
+          </div>
+
+          {/** Card 6  */}
+          <div className="card">
+            <div className="box">
+              <i className="fas fa-server"></i>
+              <div className="text">Big Applications</div>
+              <p>
+                Redux for keeping organized and managing big applications data
+                flow with a single global object, maintaining consistency
+                throughout the application and making both debugging and testing
+                easier.
               </p>
             </div>
           </div>
