@@ -25,7 +25,7 @@ const Services = () => {
           {/** Card 2  */}
           <div className="card">
             <div className="box">
-              <i class="fas fa-atom"></i>
+              <i className="fas fa-atom"></i>
 
               <div className="text">Libraries and Frameworks</div>
               <p>
