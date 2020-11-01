@@ -1,0 +1,105 @@
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.carousel-container {
+  border-radius: 6px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 250px;
+}
+
+/** =============================
+
+    A R R O W   S E T T I N G S 
+
+**  =============================*/
+
+.carousel-container .carousel-arrow {
+  position: absolute;
+  top: 50%;
+  display: block;
+  cursor: pointer;
+  opacity: 0.75;
+  color: var(--ubuntu-orange);
+  transform: translateY(-50%);
+  transition: opacity 0.15s ease;
+}
+
+.carousel-container .carousel-arrow:focus {
+  outline: 0;
+}
+
+.carousel-container .carousel-arrow:hover {
+  opacity: 0.5;
+}
+
+.carousel-container .carousel-arrow--left {
+  left: 32px;
+}
+
+.carousel-container .carousel-arrow--right {
+  right: 32px;
+}
+
+/** =============================
+
+             S L I D E S
+
+**  =============================*/
+.carousel-slide {
+  margin-right: auto;
+  margin-left: auto;
+  display: none;
+  max-width: 900px;
+  list-style-type: none;
+  text-align: center;
+}
+
+.carousel-slide.active {
+  display: block;
+}
+
+/** =============================
+
+         P A G I N A T O R 
+
+**  =============================*/
+
+/** PaginatorS PLURAL :) */
+.carousel-paginators {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
+}
+.carousel-paginators a {
+  color: transparent;
+}
+
+.carousel-paginators li {
+  margin-left: 9px;
+}
+
+.carousel-indicator {
+  display: block;
+  width: 24px;
+  height: 3px;
+  background-color: var(--ubuntu-orange);
+  cursor: pointer;
+  opacity: 0.15;
+  transition: opacity 0.15s cubic-bezier(0.4, 0, 1, 1);
+}
+
+.carousel-indicator:hover {
+  opacity: 0.5;
+}
+
+.carousel-indicator.active,
+.carousel-indicator.active:hover {
+  opacity: 0.75;
+}

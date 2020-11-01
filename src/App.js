@@ -6,16 +6,20 @@ import Footer from "./components/Footer";
 import About from "./components/About";
 import Services from "./components/Services";
 import Skills from "./components/Skills";
+import Team from "./components/Team";
+import ScrollUpButton from "./components/ScrollUpButton";
 
 function App() {
   return (
     <React.Fragment>
       <div className="App">
+        <ScrollUpButton />
         <Navbar />
         <Home />
         <About />
         <Services />
         <Skills />
+        <Team />
 
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
