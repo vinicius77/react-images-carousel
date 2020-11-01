@@ -52,9 +52,9 @@ ul {
 
 **  =============================*/
 .carousel-slide {
+  display: none;
   margin-right: auto;
   margin-left: auto;
-  display: none;
   max-width: 900px;
   list-style-type: none;
   text-align: center;
@@ -62,6 +62,9 @@ ul {
 
 .carousel-slide.active {
   display: block;
+  opacity: 0.9;
+
+  transition: all 0.5s cubic-bezier(0.7, 4, 17, 55);
 }
 
 /** =============================

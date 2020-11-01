@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Carousel.css";
 import CarouselArrow from "./CarouselArrow";
 import TeamMate from "./TeamMate";
@@ -8,31 +8,8 @@ import teamMates from "../teamMatesArray";
 const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  /** =========  Arrows and paginator event functions ==============*/
-  /** Go To the Slide Based on the Click on The Paginator */
-  const slidePaginator = index => {
-    setCurrentIndex(index);
-  };
-
-  /** Go To the previous slide based on the left arrow click*/
-  const previousSlide = event => {
-    event.preventDefault();
-
-    let newIndex = currentIndex;
-
-    if (newIndex < 1) {
-      newIndex = teamMates.length;
-    }
-
-    --newIndex;
-
-    setCurrentIndex(newIndex);
-  };
-
-  /** Go To the next slide based on the right arrow click*/
-  const nextSlide = event => {
-    event.preventDefault();
-
+  /** Right Click Function */
+  const rightArrowClick = () => {
     let newIndex = currentIndex;
     let slidesLength = teamMates.length - 1;
 
@@ -44,6 +21,56 @@ const Carousel = () => {
 
     setCurrentIndex(newIndex);
   };
+
+  /** Left Click Function */
+  const leftArrowClick = () => {
+    let newIndex = currentIndex;
+
+    if (newIndex < 1) {
+      newIndex = teamMates.length;
+    }
+
+    --newIndex;
+
+    setCurrentIndex(newIndex);
+  };
+
+  /** Automatic slider function */
+
+  const automaticSlider = () => {
+    let timer;
+    clearTimeout(timer);
+
+    timer = setTimeout(() => {
+      rightArrowClick();
+    }, 5000);
+  };
+
+  /** Go To the Slide Based on the Click on The Paginator */
+  const slidePaginator = index => {
+    setCurrentIndex(index);
+  };
+
+  /** Go To the previous slide based on the left arrow click*/
+  const previousSlide = event => {
+    event.preventDefault();
+
+    leftArrowClick();
+  };
+
+  /** Go To the next slide based on the right arrow click*/
+  const nextSlide = event => {
+    event.preventDefault();
+
+    rightArrowClick();
+  };
+
+  /** Calls the automaticSlider function which refreshes
+   * its timer everytime the current index changes */
+  useEffect(() => {
+    automaticSlider();
+    // eslint-disable-next-line
+  }, [currentIndex]);
 
   return (
     <React.Fragment>
@@ -78,7 +105,7 @@ const Carousel = () => {
               key={index}
               index={index}
               currentIndex={currentIndex}
-              onClick={event => slidePaginator(index)}
+              onClick={() => slidePaginator(index)}
             />
           ))}
         </ul>
