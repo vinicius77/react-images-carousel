@@ -93,3 +93,47 @@ export const skills = [
     porcentage: 40
   }
 ];
+
+export const services = [
+  {
+    iconName: "fas fa-sitemap",
+    text: "Frontend Stack",
+    description:
+      "HTML for creating websites and apps along with CSS for describing the visual presentation like layouts, colours and fonts and Javascript for making these pages interactive and dynamic."
+  },
+
+  {
+    iconName: "fas fa-atom",
+    text: "Libraries and Frameworks",
+    description:
+      "React for simplifying the user interface and speed-up the way HTML, CSS and JS work together creating responsive and mobile-friendly apps that display flawlessly on any device."
+  },
+
+  {
+    iconName: "fas fa-code",
+    text: "Version Control",
+    description:
+      "Git for keeping track of changes made to the code, enabling workflow management in large and collaborative projects where the app can be reinstated to previous versions free of issues."
+  },
+
+  {
+    iconName: "fas fa-database",
+    text: "Fullstack",
+    description:
+      "MERNG stack entirely using JS and JSON, for implementing the traditional 4-tier architectural pattern: frontend React, application Express and Node, database MongoDB and query GraphQL tiers."
+  },
+
+  {
+    iconName: "fas fa-chart-line",
+    text: "Data Analysis",
+    description:
+      "Python, Numpy, Pandas, Matplotlib and Seaborn for exploring and analyzing large datasets, finding hidden patterns, unseen trends, discovering correlations and deriving valuable insights to make business predictions."
+  },
+
+  {
+    iconName: "fas fa-server",
+    text: "Large Applications",
+    description:
+      "Redux for keeping organized and managing big applications data flow with a single global object, maintaining consistency throughout the application and making both debugging and testing easier."
+  }
+];
