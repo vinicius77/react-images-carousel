@@ -6,7 +6,11 @@ const Footer = () => {
     <footer>
       Reinvigorated by{" "}
       <span>
-        <a href="https://www.github.com/vinicius77" target="_blank">
+        <a
+          href="https://www.github.com/vinicius77"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           The Primeape Coder{" "}
         </a>
       </span>

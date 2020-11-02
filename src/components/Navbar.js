@@ -34,32 +34,48 @@ const Navbar = () => {
         </div>
         <ul className={isToggle ? "menu" : "menu active"}>
           <li>
-            <a href="#home" data-after="Home">
+            <a href="#home" onClick={() => onToggleHandler()} data-after="Home">
               Home
             </a>
           </li>
           <li>
-            <a href="#about" data-after="About">
+            <a
+              href="#about"
+              onClick={() => onToggleHandler()}
+              data-after="About"
+            >
               About
             </a>
           </li>
           <li>
-            <a href="#services" data-after="Services">
+            <a
+              href="#services"
+              onClick={() => onToggleHandler()}
+              data-after="Services"
+            >
               Services
             </a>
           </li>
           <li>
-            <a href="#skills" data-after="Skills">
+            <a
+              href="#skills"
+              onClick={() => onToggleHandler()}
+              data-after="Skills"
+            >
               Skills
             </a>
           </li>
           <li>
-            <a href="#team" data-after="Team">
+            <a href="#team" onClick={() => onToggleHandler()} data-after="Team">
               Team
             </a>
           </li>
           <li>
-            <a href="#contact" data-after="Contact">
+            <a
+              href="#contact"
+              onClick={() => onToggleHandler()}
+              data-after="Contact"
+            >
               Contact
             </a>
           </li>
