@@ -1,5 +1,7 @@
 import React from "react";
 import "./Skills.css";
+import { skills } from "../data.js";
+import Skill from "./Skill";
 
 const Skills = () => {
   return (
@@ -22,48 +24,9 @@ const Skills = () => {
           </div>
 
           <div className="column right">
-            <div className="bars">
-              <div className="info">
-                <span>Frontend</span>
-                <span>85%</span>
-              </div>
-              <div className="line frontend"></div>
-            </div>
-            <div className="bars">
-              <div className="info">
-                <span>React</span>
-                <span>70%</span>
-              </div>
-              <div className="line react"></div>
-            </div>
-            <div className="bars">
-              <div className="info">
-                <span>GraphQL</span>
-                <span>50%</span>
-              </div>
-              <div className="line graphql"></div>
-            </div>
-            <div className="bars">
-              <div className="info">
-                <span>MongoDB</span>
-                <span>65%</span>
-              </div>
-              <div className="line mongodb"></div>
-            </div>
-            <div className="bars">
-              <div className="info">
-                <span>Python</span>
-                <span>40%</span>
-              </div>
-              <div className="line python"></div>
-            </div>
-            <div className="bars">
-              <div className="info">
-                <span>Redux</span>
-                <span>40%</span>
-              </div>
-              <div className="line redux"></div>
-            </div>
+            {skills.map((skill, index) => (
+              <Skill key={index} skill={skill} />
+            ))}
           </div>
         </div>
       </div>

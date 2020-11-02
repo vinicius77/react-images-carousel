@@ -56,6 +56,9 @@
   align-items: center;
   justify-content: space-between;
 }
+.skills .skills-content .right .info .tech {
+  text-transform: capitalize;
+}
 
 .skills .skills-content .right span {
   font-weight: 500;
@@ -82,13 +85,13 @@
   width: 85%;
 }
 .skills .skills-content .right .react::before {
-  width: 70%;
+  width: 80%;
 }
 .skills .skills-content .right .graphql::before {
-  width: 50%;
+  width: 60%;
 }
 .skills .skills-content .right .mongodb::before {
-  width: 65%;
+  width: 75%;
 }
 .skills .skills-content .right .python::before {
   width: 40%;

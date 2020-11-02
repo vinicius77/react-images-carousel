@@ -55,3 +55,41 @@ export const contactElements = [
     subtitle: "vinicius.bonifacio1985@gmail.com"
   }
 ];
+
+/** Skill Elements from Skills Page */
+
+/** When changing % of the skills for example to 90% in React,
+ * it is necessary to change also in the Skills.css file as following:
+ *
+ * .skills .skills-content .right .react::before {
+ *    width: 80%;
+ *  }
+ *
+ */
+export const skills = [
+  {
+    tech: "frontend",
+    porcentage: 85
+  },
+  {
+    tech: "react",
+    porcentage: 80
+  },
+  {
+    tech: "graphql",
+    porcentage: 60
+  },
+  {
+    tech: "mongodb",
+    porcentage: 75
+  },
+  {
+    tech: "python",
+    porcentage: 40
+  },
+
+  {
+    tech: "redux",
+    porcentage: 40
+  }
+];
