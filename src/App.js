@@ -8,6 +8,7 @@ import Services from "./components/Services";
 import Skills from "./components/Skills";
 import Team from "./components/Team";
 import ScrollUpButton from "./components/ScrollUpButton";
+import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Services />
         <Skills />
         <Team />
+        <Contact />
 
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus

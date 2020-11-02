@@ -1,6 +1,5 @@
 /** TeamMates Data */
-
-const teamMates = [
+export const teamMates = [
   {
     imagePath: "images/afarina.jpeg",
     fullName: "Farina, André",
@@ -38,4 +37,21 @@ const teamMates = [
   }
 ];
 
-export default teamMates;
+/** Contact Page Elements Data */
+export const contactElements = [
+  {
+    icon: "fas fa-user",
+    head: "Name",
+    subtitle: "Vinicius"
+  },
+  {
+    icon: "fas fa-map-marker-alt",
+    head: "Address",
+    subtitle: "Helsinki, Finland"
+  },
+  {
+    icon: "fas fa-envelope",
+    head: "Email",
+    subtitle: "vinicius.bonifacio1985@gmail.com"
+  }
+];

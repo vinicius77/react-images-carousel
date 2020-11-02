@@ -1,0 +1,111 @@
+.contact {
+  font-family: "Roboto", sans-serif;
+  color: var(--ubuntu-gray);
+  background: var(--white);
+}
+
+.contact .title {
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.contact .title span {
+  color: var(--ubuntu-orange);
+}
+
+.contact .title::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 245px;
+  height: 5px;
+  background: var(--ubuntu-orange);
+  transform: translateX(-50%);
+}
+
+.contact .contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--smooth-gray);
+  padding: 20px;
+  border-radius: 6px;
+}
+
+.contact .contact-content .column {
+  width: calc(50% - 30px);
+}
+
+.contact .contact-content .text {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/** ========================== 
+
+      L E F T    C O L U M N
+
+*** ========================== */
+
+.contact .contact-content .left p {
+  text-align: justify;
+}
+
+.contact .contact-content .left .icons {
+  margin: 10px;
+}
+
+.contact .contact-content .row {
+  display: flex;
+  height: 65px;
+  align-items: center;
+}
+
+.contact .contact-content .row i {
+  font-size: 25px;
+  color: var(--ubuntu-orange);
+}
+
+.contact .contact-content .info {
+  margin-left: 30px;
+}
+
+.contact .contact-content .head {
+  font-weight: 600;
+}
+
+.contact .contact-content .subtitle {
+  color: var(--black);
+}
+
+/** ========================== 
+
+      R I G H T    C O L U M N
+
+*** ========================== */
+.contact .right .map {
+  display: flex;
+}
+
+.contact .right .map iframe {
+  width: 100%;
+  border: 1px solid var(--ubuntu-orange);
+  border-radius: 6px;
+  height: 300px;
+}
+
+/** Responsive Media Queries for Contact section */
+@media (max-width: 949px) {
+  .contact .contact-content .column {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+}

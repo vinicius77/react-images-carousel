@@ -3,7 +3,7 @@ import "./Carousel.css";
 import CarouselArrow from "./CarouselArrow";
 import TeamMate from "./TeamMate";
 import CarouselPaginator from "./CarouselPaginator";
-import teamMates from "../teamMatesArray";
+import { teamMates } from "../data.js";
 
 const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -43,7 +43,7 @@ const Carousel = () => {
 
     timer = setTimeout(() => {
       rightArrowClick();
-    }, 5000);
+    }, 7000);
   };
 
   /** Go To the Slide Based on the Click on The Paginator */
