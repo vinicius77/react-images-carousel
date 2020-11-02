@@ -26,23 +26,67 @@
 }
 
 .home .home-content .text-1 {
+  display: block;
+  width: fit-content;
+  position: relative;
   font-size: 27px;
+  color: transparent;
+  animation: text_reveal 1s ease forwards;
+  animation-delay: 1s;
 }
 
 .home .home-content .text-2 {
+  display: block;
+  width: fit-content;
+  position: relative;
   font-size: 75px;
   font-weight: 600px;
   margin-left: -3px;
+  color: transparent;
+  animation: text_reveal 1s ease forwards;
+  animation-delay: 2s;
 }
 
 .home .home-content .text-3 {
+  display: block;
+  width: fit-content;
+  position: relative;
   font-size: 40px;
   margin: 5px 0;
+  color: transparent;
+  animation: text_reveal 1s ease forwards;
+  animation-delay: 3s;
+}
+
+.home .home-content .text-1 span,
+.home .home-content .text-2 span,
+.home .home-content .text-3 span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background-color: var(--ubuntu-orange);
+  animation: text_reveal_box 1s ease;
+  animation-delay: 0.5s;
+}
+
+.home .home-content .text-1 span {
+  animation-delay: 0.5s;
+}
+.home .home-content .text-2 span {
+  animation-delay: 1.5s;
 }
 
 .home .home-content .text-3 span {
-  color: var(--ubuntu-orange);
+  animation-delay: 2.5s;
+}
+
+.home .home-content .text-3 strong {
+  color: transparent;
   font-weight: 500;
+  animation: strong_reveal 1s ease forwards;
+  animation-delay: 3s;
 }
 
 .home .home-content a {
@@ -107,5 +151,29 @@
 
   .home .home-content .text-3 {
     font-size: 25px;
+  }
+}
+
+/** Keyframes */
+@keyframes text_reveal_box {
+  50% {
+    width: 100%;
+    left: 0;
+  }
+  100% {
+    width: 0;
+    left: 100%;
+  }
+}
+
+@keyframes text_reveal {
+  100% {
+    color: var(--white);
+  }
+}
+
+@keyframes strong_reveal {
+  100% {
+    color: var(--ubuntu-orange);
   }
 }

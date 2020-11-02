@@ -6,10 +6,14 @@ const Home = () => {
     <section className="home" id="home">
       <div className="max-width">
         <div className="home-content">
-          <div className="text-1">Hi, I am</div>
-          <div className="text-2">Vinicius C. Bonifácio</div>
+          <div className="text-1">
+            Hi, I am<span></span>
+          </div>
+          <div className="text-2">
+            Vinicius C. Bonifácio<span></span>
+          </div>
           <div className="text-3">
-            The <span>Fullstack</span> Developer
+            The <strong>Fullstack</strong> Developer<span></span>
           </div>
           <a href="/">Hire Me</a>
         </div>
