@@ -58,13 +58,17 @@ ul {
   max-width: 900px;
   list-style-type: none;
   text-align: center;
+  opacity: 0;
 }
 
 .carousel-slide.active {
   display: block;
   opacity: 0.9;
+  animation: opacity_transition 0.5s ease forwards;
+}
 
-  transition: all 0.5s cubic-bezier(0.7, 4, 17, 55);
+.carousel-slide.active::after {
+  animation: opacity_transition 0.5s ease forwards;
 }
 
 /** =============================
@@ -105,4 +109,21 @@ ul {
 .carousel-indicator.active,
 .carousel-indicator.active:hover {
   opacity: 0.75;
+}
+
+/** ================================================================
+
+         K E Y F R A M E   F O R   S L I D E   T R A N S I T I O N  
+
+**  ================================================================ */
+@keyframes opacity_transition {
+  0% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
