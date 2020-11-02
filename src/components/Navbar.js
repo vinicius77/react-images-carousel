@@ -39,27 +39,27 @@ const Navbar = () => {
             </a>
           </li>
           <li>
-            <a href="/" data-after="About">
+            <a href="#about" data-after="About">
               About
             </a>
           </li>
           <li>
-            <a href="/" data-after="Services">
+            <a href="#services" data-after="Services">
               Services
             </a>
           </li>
           <li>
-            <a href="/" data-after="Skills">
+            <a href="#skills" data-after="Skills">
               Skills
             </a>
           </li>
           <li>
-            <a href="/" data-after="Team">
+            <a href="#team" data-after="Team">
               Team
             </a>
           </li>
           <li>
-            <a href="/" data-after="Contact">
+            <a href="#contact" data-after="Contact">
               Contact
             </a>
           </li>

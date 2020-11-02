@@ -114,6 +114,10 @@
     font-size: 25px;
   }
 
+  .navbar .menu li a:hover {
+    color: var(--ubuntu-orange);
+  }
+
   /** Creates effect when hover in the medium screen menu */
   .navbar .menu li a::after {
     content: attr(data-after);
