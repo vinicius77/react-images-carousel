@@ -28,7 +28,7 @@ const Navbar = () => {
     <nav className={navClassName === "navbar" ? navClassName : navClassName}>
       <div className="max-width">
         <div className="logo">
-          <a href="/">
+          <a href="#home">
             Vinifo<span>lio</span>
           </a>
         </div>

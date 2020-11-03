@@ -1,5 +1,6 @@
 import React from "react";
 import "./Home.css";
+import LinkTo from "./LinkTo";
 
 const Home = () => {
   return (
@@ -15,7 +16,10 @@ const Home = () => {
           <div className="text-3">
             The <strong>Fullstack</strong> Developer<span></span>
           </div>
-          <a href="/">Hire Me</a>
+          <LinkTo
+            to={"mailto:vinicius.bonifacio1985@gmail.com"}
+            children={"Hire Me"}
+          />
         </div>
       </div>
     </section>

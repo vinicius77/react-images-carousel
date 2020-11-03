@@ -1,5 +1,6 @@
 import React from "react";
 import "./About.css";
+import LinkTo from "./LinkTo";
 
 const About = () => {
   return (
@@ -24,7 +25,12 @@ const About = () => {
               and Naruto Shippuden, reading and travelling. Also loves surfing
               but here in Finland it is such a hard task to accomplish.
             </p>
-            <a href="/">Download my CV</a>
+
+            <LinkTo
+              to={"/files/viniciusCerqueiraBonifacioCV.pdf"}
+              children={"Download My CV"}
+              option={"download"}
+            />
           </div>
         </div>
       </div>
