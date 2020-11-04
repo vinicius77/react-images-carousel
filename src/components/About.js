@@ -1,8 +1,10 @@
 import React from "react";
 import "./About.css";
 import LinkTo from "./LinkTo";
+import { aboutMe } from "../data";
 
 const About = () => {
+  const { description, title, introduction } = aboutMe;
   return (
     <section className="about" id="about">
       <div className="max-width">
@@ -15,16 +17,10 @@ const About = () => {
           </div>
           <div className="column right">
             <div className="text">
-              My name is Vinicius and I'm a <span>Fullstack Developer</span>
+              {introduction}
+              <span>{title}</span>
             </div>
-            <p>
-              A top bloke dude that when isn't glued to his laptop screen,
-              spends time outside playing football and working out, drawing,
-              playing and listening to music, learning random stuff,
-              skateboarding, watching repeated episodes of Two and a Half Men
-              and Naruto Shippuden, reading and travelling. Also loves surfing
-              but here in Finland it is such a hard task to accomplish.
-            </p>
+            <p>{description}</p>
 
             <LinkTo
               to={"/files/viniciusCerqueiraBonifacioCV.pdf"}

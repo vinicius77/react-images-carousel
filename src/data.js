@@ -90,7 +90,7 @@ export const skills = [
 
   {
     tech: "redux",
-    porcentage: 40
+    porcentage: 60
   }
 ];
 
@@ -137,3 +137,11 @@ export const services = [
       "Redux for keeping organized and managing big applications data flow with a single global object, maintaining consistency throughout the application and making both debugging and testing easier."
   }
 ];
+
+/** About me Data */
+export const aboutMe = {
+  introduction: "My name is Vinicius and I'm a ",
+  title: "Fullstack Developer",
+  description:
+    "A top bloke that when isn't glued to his laptop screen, spends time outside playing football and working out. Also enjoys drawing, playing and listening to music, learning random stuff, skateboarding, watching repeated episodes of Two and a Half Men and Naruto Shippuden, reading and travelling. Loves surfing but thinks that in Finland it is such a hard task to accomplish."
+};
