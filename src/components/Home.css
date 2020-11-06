@@ -1,6 +1,8 @@
 .home {
   display: flex;
   background: url("../images/main-background.jpg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
   height: 100vh;
   color: var(--white);
   min-height: 500px;
