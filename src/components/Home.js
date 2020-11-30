@@ -1,8 +1,13 @@
-import React from "react";
-import "./Home.css";
-import LinkTo from "./LinkTo";
+import React from 'react';
+import './Home.css';
+import LinkTo from './LinkTo';
+import { sendEvent } from '../googleAnalytics/analytics';
 
 const Home = () => {
+  const onClickHandler = () => {
+    sendEvent({ category: 'Click Event', action: 'clicked on Hire Me button' });
+  };
+
   return (
     <section className="home" id="home">
       <div className="max-width">
@@ -17,8 +22,9 @@ const Home = () => {
             The <strong>Fullstack</strong> Developer<span></span>
           </div>
           <LinkTo
-            to={"mailto:vinicius.bonifacio1985@gmail.com"}
-            children={"Hire Me"}
+            to={'mailto:vinicius.bonifacio1985@gmail.com'}
+            children={'Hire Me'}
+            onClick={() => onClickHandler()}
           />
         </div>
       </div>
