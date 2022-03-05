@@ -1,10 +1,6 @@
-# Vinícius C. Bonifácio - Portfolio
+# React Images Carousel
 
-My professional website made for showcase some of my qualifications as a IT developer.
-
-## Proudly Deployed on Heroku at
-
-[Vinicius' Portfolio](https://vinicius-portfolio.herokuapp.com)
+My version of images carousel without using libraries for that.
 
 ## Getting Started
 
@@ -31,13 +27,13 @@ This procedure assumes you have already [created a repository on GitHub](https:/
 7.  Type `git clone`, and then paste the URL you copied in Step 2.
 
     ```shell
-    $ git clone https://github.com/vinicius77/react-portfolio.git
+    $ git clone https://github.com/vinicius77/react-images-carousel.git
     ```
 
 8.  Press **Enter**. Your local clone will be created.
 
     ```shell
-    $ git clone https://github.com/vinicius77/react-portfolio.git
+    $ git clone https://github.com/vinicius77/react-images-carousel.git
     > Cloning into `Vai Corinthians`...
     > remote: Counting objects: 10, done.
     > remote: Compressing objects: 100% (8/8), done.
@@ -76,8 +72,6 @@ This project uses npm
 - [Ubuntu](https://ubuntu.com/) - An open source OS that runs from the desktop, to the cloud, to all your internet connected things.
 - [Visual Code Studio](https://code.visualstudio.com/) - An open source code editor.
 - [React JS](https://reactjs.org) - A JavaScript library for building user interfaces.
-- [Node JS](https://nodejs.org/en/) - A JavaScript runtime built on Chrome's V8 JavaScript engine.
-- [Heroku](https://www.heroku.com) - A PaaS that enables developers to build, run and operate applications entirely in the cloud.
 
 ## Dependencies
 
