@@ -1,117 +1,96 @@
-import React, { useState, useEffect } from "react";
-import "./Carousel.css";
-import CarouselArrow from "./CarouselArrow";
-import TeamMate from "./TeamMate";
-import CarouselPaginator from "./CarouselPaginator";
-import { teamMates } from "../data.js";
+import React, { useState } from 'react';
+import './Carousel.css';
+import CarouselArrow from './CarouselArrow';
+import CarouselPaginator from './CarouselPaginator';
+import { images } from '../images.js';
+import Image from './Image';
 
 const Carousel = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
+	const [currentIndex, setCurrentIndex] = useState(0);
 
-  /** Right Click Function */
-  const rightArrowClick = () => {
-    let newIndex = currentIndex;
-    let slidesLength = teamMates.length - 1;
+	/** Right Click Function */
+	const rightArrowClick = () => {
+		let newIndex = currentIndex;
+		let slidesLength = images.length - 1;
 
-    if (newIndex === slidesLength) {
-      newIndex = -1;
-    }
+		if (newIndex === slidesLength) {
+			newIndex = -1;
+		}
 
-    ++newIndex;
+		++newIndex;
 
-    setCurrentIndex(newIndex);
-  };
+		setCurrentIndex(newIndex);
+	};
 
-  /** Left Click Function */
-  const leftArrowClick = () => {
-    let newIndex = currentIndex;
+	/** Left Click Function */
+	const leftArrowClick = () => {
+		let newIndex = currentIndex;
 
-    if (newIndex < 1) {
-      newIndex = teamMates.length;
-    }
+		if (newIndex < 1) {
+			newIndex = images.length;
+		}
 
-    --newIndex;
+		--newIndex;
 
-    setCurrentIndex(newIndex);
-  };
+		setCurrentIndex(newIndex);
+	};
 
-  /** Automatic slider function */
+	/** Go To the Slide Based on the Click on The Paginator */
+	const slidePaginator = (index) => {
+		setCurrentIndex(index);
+	};
 
-  const automaticSlider = () => {
-    let timer;
-    clearTimeout(timer);
+	/** Go To the previous slide based on the left arrow click*/
+	const previousSlide = (event) => {
+		event.preventDefault();
 
-    timer = setTimeout(() => {
-      rightArrowClick();
-    }, 7000);
-  };
+		leftArrowClick();
+	};
 
-  /** Go To the Slide Based on the Click on The Paginator */
-  const slidePaginator = index => {
-    setCurrentIndex(index);
-  };
+	/** Go To the next slide based on the right arrow click*/
+	const nextSlide = (event) => {
+		event.preventDefault();
 
-  /** Go To the previous slide based on the left arrow click*/
-  const previousSlide = event => {
-    event.preventDefault();
+		rightArrowClick();
+	};
 
-    leftArrowClick();
-  };
+	return (
+		<React.Fragment>
+			<div className="carousel-container">
+				{/** Arrow Left 
+				<CarouselArrow direction={'left'} action={previousSlide} />
+        
+        */}
 
-  /** Go To the next slide based on the right arrow click*/
-  const nextSlide = event => {
-    event.preventDefault();
+				<ul className="carousel-paginators">
+					{images.map((_image, index) => (
+						<CarouselPaginator
+							key={index}
+							index={index}
+							currentIndex={currentIndex}
+							onClick={() => slidePaginator(index)}
+						/>
+					))}
+				</ul>
 
-    rightArrowClick();
-  };
+				{/** Carousel Content */}
+				<ul className="carousel-slides-container">
+					{images.map((image, index) => (
+						<li
+							key={index}
+							className={index === currentIndex ? 'carousel-slide active' : 'carousel-slide'}
+						>
+							<Image key={image.url} url={image.url} />
+						</li>
+					))}
+				</ul>
 
-  /** Calls the automaticSlider function which refreshes
-   * its timer everytime the current index changes */
-  useEffect(() => {
-    automaticSlider();
-    // eslint-disable-next-line
-  }, [currentIndex]);
-
-  return (
-    <React.Fragment>
-      <div className="carousel-container">
-        {/** Arrow Left */}
-        <CarouselArrow direction={"left"} action={previousSlide} />
-
-        {/** Carousel Content */}
-        <ul className="carousel-slides-container">
-          {teamMates.map((teamMate, index) => (
-            <li
-              key={index}
-              className={
-                index === currentIndex
-                  ? "carousel-slide active"
-                  : "carousel-slide"
-              }
-            >
-              {" "}
-              <TeamMate teamMate={teamMate} />
-            </li>
-          ))}
-        </ul>
-
-        {/** Arrow Right */}
-        <CarouselArrow direction={"right"} action={nextSlide} />
-
-        {/** Paginators */}
-        <ul className="carousel-paginators">
-          {teamMates.map((slide, index) => (
-            <CarouselPaginator
-              key={index}
-              index={index}
-              currentIndex={currentIndex}
-              onClick={() => slidePaginator(index)}
-            />
-          ))}
-        </ul>
-      </div>
-    </React.Fragment>
-  );
+				{/** Arrow Right 
+				<CarouselArrow direction={'right'} action={nextSlide} />
+        */}
+			</div>
+		</React.Fragment>
+	);
 };
 
 export default Carousel;

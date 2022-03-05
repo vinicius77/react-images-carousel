@@ -33,6 +33,12 @@ section {
   padding: 60px 0;
 }
 
+.app-container{
+  display: flex;
+  justify-content: center;
+  min-height: 250px; 
+}
+
 /** Responsive Media Queries */
 @media (max-width: 949px) {
   .max-width {

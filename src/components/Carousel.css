@@ -81,8 +81,8 @@ ul {
 .carousel-paginators {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  margin-top: 20px;
+  justify-content: flex-end;
+  margin-bottom: 20px;
 }
 .carousel-paginators a {
   color: transparent;
@@ -94,12 +94,14 @@ ul {
 
 .carousel-indicator {
   display: block;
-  width: 24px;
-  height: 3px;
+  width: 7px;
+  height: 7px;
   background-color: var(--ubuntu-orange);
   cursor: pointer;
   opacity: 0.15;
   transition: opacity 0.15s cubic-bezier(0.4, 0, 1, 1);
+  border: 1px solid var(--ubuntu-orange);
+  border-radius: 50%;
 }
 
 .carousel-indicator:hover {
